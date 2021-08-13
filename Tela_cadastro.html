@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <style>
+         body{
+            background-color: #111931;
+        }
+        
+        .container-cadastro{
+            box-shadow: 0px 0px 10px;
+            padding: 15px;
+            background-color:#EDE9E9; 
+            position: absolute;
+            top: 25%;
+            left: 50%;
+            transform: translate(-50%, -10%);
+        }
+        h1{
+            text-align: center;
+        }
+
+        #button{
+            background: linear-gradient(to right, #DDEF3F, #d2e813);
+            font:center;
+            font-size: 18px;
+            width: 100%;
+            margin-top: 20px;
+            padding: 10px;
+            background-color:#DDEF3F;
+            cursor: pointer;
+        }
+        
+        input{
+          
+	        width: 100%;
+	        margin: 0 auto;
+	        padding: 10px;
+	        border: none;
+	        margin-bottom: 10px;
+	        border-radius: 50px;
+        }
+        
+    </style>
+</head>
+<body>
+
+    <div class="container-fluid  p-2" style="background-color: #DDEF3F;"></div>
+    <div>
+        <nav class="navbar col-12 navbar-expand-lg navbar-dark" style="background-color:#111931;">
+            <div class="container-fluid col-11">
+              <a class="navbar-brand" href="#">ACM Tech</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Serviços
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="Criacao_Site.html">Criação de Sites</a></li>
+                      <li><a class="dropdown-item" href="#">Administração de Banco de Dados</a></li>
+                      <li><a class="dropdown-item" href="#">Modelagem de um Projeto de Software</a></li>
+                      
+                    </ul>
+                  </li>
+                
+                </ul>
+                <p class="text-center">
+                  <a href="tela_login.html" class="btn btn-secondary">Área do Desenvolvedor</a>
+              </p>
+              </div>
+            </div>
+          </nav>
+    </div>
+    
+    
+    <div class="container-cadastro">
+        <h1>Cadastro para Acesso</h1><br>
+        <form method="POST" action="cadastro.php">
+            <strong>Nome:</strong> <br><input name="nome" maxlength="100" size="50" required><br>
+
+            <strong>Sobrenome:</strong> <br><input name="sobrenome" maxlength="50" required><br>
+
+            <strong>Data de Nascimento:</strong><br><input id="date" type="date" name="data_nascimento" required><br>
+
+            <strong>CPF:</strong><br><input name="cpf"  placeholder="Ex.:000.000.000-00" required>
+
+            <strong>E-mail:</strong><br><input name="email" name="email" required placeholder="Ex.: xxx@gmail.com"><br>
+
+            <strong>Telefone:</strong><br><input name ="telefone" placeholder="Ex.: (00) 0000-0000" required>
+
+            <strong>Senha:</strong><br><input id="senha" name="senha" type="password" name="senha" required placeholder="Senha - Mínimo de 8 caracteres" required>
+
+            <strong>Confirmar Senha:</strong><br><input id="senha" type="password" name="senha" required placeholder="Confirme sua Senha" required>
+            
+            <br><input id="button" type="submit" value="Criar sua conta agora">
+        </form>
+    </div>
+    
+
+</body>
+
+</html>
